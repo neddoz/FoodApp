@@ -76,6 +76,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CD12BF211FAB54840047887D /* Other */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
 		CD6FB1611FAB445F00BA81F9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +140,7 @@
 		CD6FB1691FAB445F00BA81F9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				CD12BF211FAB54840047887D /* Other */,
 				CD6FB16A1FAB445F00BA81F9 /* Base */,
 			);
 			path = UI;
