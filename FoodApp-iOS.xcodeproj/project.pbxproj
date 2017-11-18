@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3119728205F410310542CE08 /* Pods_FoodApp_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6520B4C09C1E3BDA254DF21 /* Pods_FoodApp_iOS.framework */; };
 		CD6FB16C1FAB445F00BA81F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6FB1681FAB445F00BA81F9 /* AppDelegate.swift */; };
 		CD6FB16D1FAB445F00BA81F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6FB16B1FAB445F00BA81F9 /* ViewController.swift */; };
 		CD6FB1721FAB449100BA81F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD6FB1701FAB449100BA81F9 /* Assets.xcassets */; };
@@ -36,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F7FD8B9312CF5408DA5D6F8 /* Pods-FoodApp-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp-iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp-iOS/Pods-FoodApp-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		AB29363C55331880514F1D0B /* Pods-FoodApp-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodApp-iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FoodApp-iOS/Pods-FoodApp-iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B6520B4C09C1E3BDA254DF21 /* Pods_FoodApp_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodApp_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6FB1681FAB445F00BA81F9 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD6FB16B1FAB445F00BA81F9 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CD6FB1701FAB449100BA81F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3119728205F410310542CE08 /* Pods_FoodApp_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09A91B86561B4987430CBD05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6520B4C09C1E3BDA254DF21 /* Pods_FoodApp_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		120BC7DA9240D64C58842913 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB29363C55331880514F1D0B /* Pods-FoodApp-iOS.debug.xcconfig */,
+				4F7FD8B9312CF5408DA5D6F8 /* Pods-FoodApp-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CD12BF211FAB54840047887D /* Other */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +204,8 @@
 				CDF1D59E1FAB429400893742 /* FoodAppTests */,
 				CD6FB1741FAB497300BA81F9 /* FoodAppUITests */,
 				CDF1D5881FAB429400893742 /* Products */,
+				120BC7DA9240D64C58842913 /* Pods */,
+				09A91B86561B4987430CBD05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,9 +246,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDF1D5AF1FAB429400893742 /* Build configuration list for PBXNativeTarget "FoodApp-iOS" */;
 			buildPhases = (
+				2DB9D2A7C0053448060043DB /* [CP] Check Pods Manifest.lock */,
 				CDF1D5831FAB429400893742 /* Sources */,
 				CDF1D5841FAB429400893742 /* Frameworks */,
 				CDF1D5851FAB429400893742 /* Resources */,
+				9D52C0381BD1F998D1385855 /* [CP] Embed Pods Frameworks */,
+				100D6BBB553FD296D9470872 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -345,6 +372,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100D6BBB553FD296D9470872 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp-iOS/Pods-FoodApp-iOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2DB9D2A7C0053448060043DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9D52C0381BD1F998D1385855 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FoodApp-iOS/Pods-FoodApp-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CDF1D5831FAB429400893742 /* Sources */ = {
@@ -497,6 +572,7 @@
 		};
 		CDF1D5B01FAB429400893742 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB29363C55331880514F1D0B /* Pods-FoodApp-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -512,6 +588,7 @@
 		};
 		CDF1D5B11FAB429400893742 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F7FD8B9312CF5408DA5D6F8 /* Pods-FoodApp-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
